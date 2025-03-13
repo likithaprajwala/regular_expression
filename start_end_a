@@ -1,0 +1,15 @@
+import re
+
+def match_words_start_end_a(text):
+    # Define the regex pattern: words that start and end with 'a'
+    pattern = r'\b[aA]\w*a\b'
+    
+    # Use re.findall() to find all matches
+    matching_words = re.findall(pattern, text)
+    
+    return matching_words
+
+# Example Usage
+text = "my agenda is to own tha area"
+result = match_words_start_end_a(text)
+print(result)  # Output: ['agenda', 'area']
