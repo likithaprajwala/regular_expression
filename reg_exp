@@ -1,0 +1,16 @@
+import re
+txt = "my number is 933039430511 and i will come at 5:00"
+x = re.findall("\d{12}", txt)
+print(x)
+
+#first and last letter name matching problem
+import re
+frnds=input("enter names: ")
+word=frnds.slipt()
+for word in words:
+
+    x = re.search("^a.*a$",word, re.IGNORECASE)
+    if x:
+        print("YES! The word matches!")
+    else:
+        print("No match for the word!")
